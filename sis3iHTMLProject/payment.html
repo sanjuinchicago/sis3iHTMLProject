@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to sis3i</title>
+<!--===============================================================================================-->
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="bg-boxed">
+		<div class="boxed">
+			<header>
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<span class="navbar-header-logo"> 
+								<img class="navbar-header-logo-img" src="images/logo.png">sis3i
+							</span>
+							<!-- <span class="navbar-header-brand">sis3i</span> -->
+						</div>
+						<div class="navbar-header-title">
+							<ul class="nav navbar-nav">
+								<li><a href="appartmentDetails.html">Home</a></li>
+								<li class="active"><span class="paymentInfo-stripe header-stripe"></span>
+									<a href="payment.html">Payments</a></li>
+								<li><a href="maintenance.html">Maintenance</a></li>
+								<li><a href="documents.html">Shared Documents</a></li>
+								<li><a href="propertyInfo.html">Property Info</a></li>
+							</ul>
+							<form class="navbar-form navbar-left" action="/action_page.php">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search"
+										name="search">
+									<div class="input-group-btn">
+										<button class="btn btn-default" type="submit">
+											<i class="glyphicon glyphicon-search"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+							<div class="navbar-header-user">
+								<a class="navbar-header-user-title">Hello Demo</a>
+								<!-- <img class="" src="images/user-icon48x48.png"> -->
+								<div class="navbar-header-hoverDropdown-content">
+									<i class="fa fa-sign-out"></i>
+									<a href="login.html" onclick="" class="menu">Logout</a>
+									<i class="fa fa-address-card-o"></i>
+									<a href="profile.html" onclick="" class="menu">Profile</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="payment-wrapper">
+				<div class="payment-wrapper-left">
+					<div class="payment-section balanceInfo">
+						<span class="paymentInfo-stripe header-stripe"></span>
+						<section>
+							<h2>Your Current Balance</h2>
+							<h4>$800 is for you to pay.</h4>
+							<button onclick="window.location.href='makePayment.html'"> Pay Now </button>
+						</section>
+					</div>
+					<div class="payment-section ledgerInfo">
+						<span class="paymentInfo-stripe header-stripe"></span>
+						<section>
+							<h2>Account Ledger</h2>
+							<section>Need more help understanding your balance?</section>
+							<button> View full account ledger </button>
+						</section>
+					</div>
+				</div>
+				<div class="payment-wrapper-right">
+					<div class="payment-section pastPaymentinfo">
+						<span class="paymentInfo-stripe header-stripe"></span>
+						<section>
+							<h2>Past Payments</h2>
+							<table>
+								<tbody>
+									<tr>
+										<td class="table_icon"><span role="status"
+											aria-label="paid" class="status-icon"></span>
+										</td>
+										<td>
+											<div class="past-payment__payment-amount js-past-payment-amount">$451.73</div>
+											<p class="u-space-an">Paid on 03/07/2018</p>
+											<p class="u-space-an">Confirmation #: 83D1-41D8</p>
+											<p class="past-payment__paid-by">Paid by You</p>
+											<p class="u-space-an u-unemphasize">Includes March 2018,
+												Utility charge for Water from 01/17/2018 to 02/13/2018</p>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="table_icon"><span role="status"
+											aria-label="paid" class="status-icon"></span>
+										</td>
+										<td>
+											<div class="past-payment__payment-amount js-past-payment-amount">$43.73</div>
+											<p class="u-space-an">Paid on 03/07/2018</p>
+											<p class="u-space-an">Confirmation #: 83D1-41D8</p>
+											<p class="past-payment__paid-by">Paid by You</p>
+											<p class="u-space-an u-unemphasize">Includes Online Prepayment</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<span>sis3i Properties<br> +1 (224) 392-4064</span>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
